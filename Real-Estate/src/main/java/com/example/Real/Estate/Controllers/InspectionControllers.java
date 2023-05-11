@@ -16,7 +16,6 @@ public class InspectionControllers {
     @RequestMapping(value = "getAll", method = RequestMethod.GET)
     List<Inspection> getAllInspections(){
         return inspectionServices.getAllInspections();
-        // http://localhost:8080/Inspection/getAll
 
     }
 

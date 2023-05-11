@@ -16,5 +16,6 @@ import lombok.Setter;
         long id;
 
         String evaluation;
+        String condition;
 
 }

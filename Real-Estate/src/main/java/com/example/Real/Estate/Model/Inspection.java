@@ -8,5 +8,11 @@ import lombok.Setter;
 @Setter
 @Getter
 @Entity
-public class Inspection {
+public class Inspection extends BaseEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    long id;
+
+    String inspectorName;
+    String status;
 }

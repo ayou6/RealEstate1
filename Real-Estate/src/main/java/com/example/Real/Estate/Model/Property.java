@@ -8,5 +8,17 @@ import lombok.Setter;
 @Setter
 @Getter
 @Entity
-public class Property {
+@Table(name = "Properties")
+
+    public class Property {
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        long id;
+
+        String name;
+        String address;
+        String description;
+        Double price;
+        Double area;
+
 }

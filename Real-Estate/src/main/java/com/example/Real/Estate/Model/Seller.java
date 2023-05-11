@@ -8,5 +8,14 @@ import lombok.Setter;
 @Setter
 @Getter
 @Entity
-public class Seller {
+@Table(name = "Sellers")
+
+    public class Seller {
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        long id;
+
+        String name;
+        String email;
+        int phoneNumber;
 }

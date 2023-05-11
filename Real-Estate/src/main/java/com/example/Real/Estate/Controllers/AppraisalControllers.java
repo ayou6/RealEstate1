@@ -20,7 +20,6 @@ import java.util.List;
         @RequestMapping(value = "getAll", method = RequestMethod.GET)
         public List<Appraisal> getAllAppraisals() {
             return appraisalServices.getAllAppraisals();
-            // http://localhost:8080/Appraisal/getAll
 
         }
 }

@@ -20,7 +20,6 @@ public class AgentControllers {
         @RequestMapping(value = "getAll", method = RequestMethod.GET)
         public List<Agent> getAgentList() {
             return agentServices.getAllAgents();
-            // http://localhost:8080/Agent/getAll
 
         }
 }}

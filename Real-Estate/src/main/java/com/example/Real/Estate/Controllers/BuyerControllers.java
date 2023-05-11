@@ -18,6 +18,5 @@ public class BuyerControllers {
     @RequestMapping(value = "getAll",method = RequestMethod.GET)
     public List<Buyer> getAllBuyers() {
         return buyerServices.getAllBuyers();
-        // http://localhost:8080/Buyer/getAll
     }
 }

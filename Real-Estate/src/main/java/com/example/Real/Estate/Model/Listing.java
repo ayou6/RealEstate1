@@ -5,8 +5,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 @Data
-@Setter
 @Getter
+@Setter
 @Entity
 @Table(name = "listing")
 

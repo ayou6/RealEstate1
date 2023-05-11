@@ -6,11 +6,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
-public class ListingServices {
-    @Autowired
-    ListingRepository listingRepository;
+    public class ListingServices {
+        @Autowired
+        ListingRepository listingRepository;
 
-    public List<Listing> getAllListings(){
-        return listingRepository.findAll();
-    }
+        public List<Listing> getAllListings(){
+            return listingRepository.findAll();
+        }
 }

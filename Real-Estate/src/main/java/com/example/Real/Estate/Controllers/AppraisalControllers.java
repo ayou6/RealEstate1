@@ -11,15 +11,13 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "Appraisal")
-    public class AppraisalControllers {
+public class AppraisalControllers {
+    @Autowired
+    AppraisalServices appraisalServices;
 
+    @RequestMapping(value = "getAll", method = RequestMethod.GET)
+    public List<Appraisal> getAllAppraisals() {
+        return appraisalServices.getAllAppraisals();
 
-        @Autowired
-        AppraisalServices appraisalServices;
-
-        @RequestMapping(value = "getAll", method = RequestMethod.GET)
-        public List<Appraisal> getAllAppraisals() {
-            return appraisalServices.getAllAppraisals();
-
-        }
+    }
 }

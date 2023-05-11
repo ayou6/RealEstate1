@@ -8,6 +8,13 @@ import lombok.Setter;
 @Setter
 @Getter
 @Entity
-public class Appraisal {
+@Table(name = "appraisal")
+
+    public class Appraisal extends BaseEntity {
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        long id;
+
+        String evaluation;
 
 }

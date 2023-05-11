@@ -9,9 +9,9 @@ import lombok.Setter;
 @Getter
 @Entity
 
-//@Table(name = "")
+@Table(name = "Buyer")
 
-    public class Buyer {
+    public class Buyer extends BaseEntity {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         long id;

@@ -10,7 +10,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "Properties")
 
-    public class Property {
+    public class Property extends BaseEntity{
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         long id;

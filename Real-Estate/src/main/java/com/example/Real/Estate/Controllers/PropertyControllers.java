@@ -9,15 +9,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RequestMapping(value = "Property")
+
 @RestController
-    public class PropertyControllers {
-        @Autowired
-        PropertyServices propertyServices;
+@RequestMapping(value = "Property")
+public class PropertyControllers {
+    @Autowired
+    PropertyServices propertyServices;
 
-        @RequestMapping(value = "getAll", method = RequestMethod.GET)
-        public List<Property> getAllProperties(){
-            return propertyServices.getAllProperties();
+    @RequestMapping(value = "getAll", method = RequestMethod.GET)
+    public List<Property> getAllProperties() {
+        return propertyServices.getAllProperties();
 
-        }
+    }
 }

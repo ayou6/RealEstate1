@@ -8,6 +8,8 @@ import lombok.Setter;
 @Setter
 @Getter
 @Entity
+@Table(name = "inspection")
+
 public class Inspection extends BaseEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

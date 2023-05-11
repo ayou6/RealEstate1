@@ -8,7 +8,7 @@ import lombok.Setter;
 @Setter
 @Getter
 @Entity
-@Table(name = "Sellers")
+@Table(name = "sellers")
 
     public class Seller extends BaseEntity{
         @Id

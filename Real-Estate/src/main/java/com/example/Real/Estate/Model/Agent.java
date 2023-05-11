@@ -11,7 +11,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "agents")
 
-    public class Agent {
+    public class Agent extends BaseEntity{
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)

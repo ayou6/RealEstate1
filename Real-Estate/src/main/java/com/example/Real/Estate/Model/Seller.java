@@ -1,12 +1,11 @@
 package com.example.Real.Estate.Model;
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
+
 
 @Data
-@Setter
 @Getter
+@Setter
 @Entity
 @Table(name = "sellers")
 
@@ -15,7 +14,7 @@ import lombok.Setter;
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         long id;
 
+        int phoneNumber;
         String name;
         String email;
-        int phoneNumber;
 }

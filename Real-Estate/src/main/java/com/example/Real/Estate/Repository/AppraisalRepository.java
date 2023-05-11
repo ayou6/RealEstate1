@@ -1,4 +1,7 @@
 package com.example.Real.Estate.Repository;
 
-public interface AppraisalRepository {
+import com.example.Real.Estate.Model.Appraisal;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface AppraisalRepository extends JpaRepository<Appraisal,Long> {
 }

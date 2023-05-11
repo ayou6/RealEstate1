@@ -10,14 +10,16 @@ import lombok.Setter;
 @Getter
 @Entity
 @Table(name = "agents")
-public class Agent {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long id;
-    String name;
-    String email;
-    int phoneNumber;
+    public class Agent {
+
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        long id;
+
+        String name;
+        String email;
+        int phoneNumber;
 
 
 }

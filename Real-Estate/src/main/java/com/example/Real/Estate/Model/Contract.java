@@ -8,5 +8,10 @@ import lombok.Setter;
 @Setter
 @Getter
 @Entity
-public class Contract {
+//@Table(name = "")
+public class Contract extends BaseEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    long id;
+
 }

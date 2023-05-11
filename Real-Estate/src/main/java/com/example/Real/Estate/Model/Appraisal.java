@@ -9,4 +9,5 @@ import lombok.Setter;
 @Getter
 @Entity
 public class Appraisal {
+
 }

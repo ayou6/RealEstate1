@@ -8,11 +8,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class InspectionServices {
-    @Autowired
-    InspectionRepository inspectionRepository;
+    public class InspectionServices {
+        @Autowired
+        InspectionRepository inspectionRepository;
 
-    public List<Inspection> getAllInspections(){
-        return inspectionRepository.findAll();
-    }
+        public List<Inspection> getAllInspections(){
+            return inspectionRepository.findAll();
+        }
 }

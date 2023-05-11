@@ -10,11 +10,11 @@ import lombok.Setter;
 @Entity
 @Table(name = "inspection")
 
-public class Inspection extends BaseEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    long id;
+    public class Inspection extends BaseEntity {
+        @Id
+        @GeneratedValue(strategy = GenerationType.IDENTITY)
+        long id;
 
-    String inspectorName;
-    String status;
+        String status;
+        String inspectorName;
 }

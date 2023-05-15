@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "Buyer")
+@RequestMapping(value = "buyer")
 public class BuyerControllers {
     @Autowired
     BuyerServices buyerServices;

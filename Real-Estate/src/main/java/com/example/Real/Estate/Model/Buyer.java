@@ -7,7 +7,6 @@ import lombok.*;
 @Setter
 @Getter
 @Entity
-
 @Table(name = "buyer")
 
     public class Buyer extends BaseEntity {
